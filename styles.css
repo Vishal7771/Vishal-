@@ -38,9 +38,9 @@ body {
 }
 
 .sale-price {
-    font-size: 50px;
+    font-size: 39px;
     font-weight: bold;
-    color: green;
+    
 }
 
 .name {
@@ -50,7 +50,7 @@ body {
 }
 
 .mrp {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: bold;
-    color: rgba(13, 51, 223, 0.836);
+
 }
