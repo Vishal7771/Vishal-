@@ -34,23 +34,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
+    width: 200px; /* Default box width */
+    height: 200px; /* Default box height */
 }
 
 .sale-price {
-    font-size: 39px;
+    font-size: 25px; /* Default sale price font size */
     font-weight: bold;
-    
+    color: green;
 }
 
 .name {
-    font-size: 25px;
+    font-size: 20px; /* Default name font size */
     font-weight: bold;
     margin: 10px 0;
 }
 
 .mrp {
-    font-size: 27px;
+    font-size: 15px; /* Default MRP font size */
     font-weight: bold;
-
+    color: rgba(13, 51, 223, 0.836);
 }
