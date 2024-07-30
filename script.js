@@ -1,19 +1,51 @@
 function adjustContainer() {
-    const widthInput = document.getElementById('width-input').value;
-    const heightInput = document.getElementById('height-input').value;
-    const container = document.querySelector('.container');
-    
-    if (widthInput) {
-        container.style.width = `${widthInput}px`;
+    const containerWidthInput = document.getElementById('width-input').value;
+    const containerHeightInput = document.getElementById('height-input').value;
+    const boxWidthInput = document.getElementById('box-width-input').value;
+    const boxHeightInput = document.getElementById('box-height-input').value;
+    const salePriceFontInput = document.getElementById('sale-price-font-input').value;
+    const nameFontInput = document.getElementById('name-font-input').value;
+    const mrpFontInput = document.getElementById('mrp-font-input').value;
+    const container = document.getElementById('product-container');
+    const products = document.querySelectorAll('.product');
+
+    if (containerWidthInput) {
+        container.style.width = `${containerWidthInput}px`;
     }
-    
-    if (heightInput) {
-        container.style.height = `${heightInput}px`;
+
+    if (containerHeightInput) {
+        container.style.height = `${containerHeightInput}px`;
     }
+
+    products.forEach(product => {
+        if (boxWidthInput) {
+            product.style.width = `${boxWidthInput}px`;
+        }
+
+        if (boxHeightInput) {
+            product.style.height = `${boxHeightInput}px`;
+        }
+
+        const salePriceElement = product.querySelector('.sale-price');
+        const nameElement = product.querySelector('.name');
+        const mrpElement = product.querySelector('.mrp');
+
+        if (salePriceFontInput) {
+            salePriceElement.style.fontSize = `${salePriceFontInput}px`;
+        }
+
+        if (nameFontInput) {
+            nameElement.style.fontSize = `${nameFontInput}px`;
+        }
+
+        if (mrpFontInput) {
+            mrpElement.style.fontSize = `${mrpFontInput}px`;
+        }
+    });
 }
 
 document.getElementById('file-upload').addEventListener('change', handleFileUpload);
- 
+
 function handleFileUpload(event) {
     const file = event.target.files[0];
     if (!file) {
