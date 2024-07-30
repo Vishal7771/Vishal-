@@ -38,19 +38,19 @@ body {
 }
 
 .sale-price {
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bold;
     color: green;
 }
 
 .name {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .mrp {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: rgba(13, 51, 223, 0.836);
 }
